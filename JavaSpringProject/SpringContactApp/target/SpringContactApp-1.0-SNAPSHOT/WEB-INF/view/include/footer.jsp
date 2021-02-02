@@ -1,0 +1,1 @@
+&COPY;[2020-2021] All Rights Reserved.

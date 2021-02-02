@@ -1,0 +1,8 @@
+com\spring\capp\test\TestUserDAOSave.class
+com\spring\capp\test\TestUserDAODelete.class
+com\spring\capp\test\TestUserDAOUpdate.class
+com\spring\capp\test\TestDataSource.class
+com\spring\capp\test\TestUserDAOFindByProp.class
+com\spring\capp\test\TestUserDAOFindAll.class
+com\spring\capp\test\TestUserDAOFindSingleRecord.class
+com\spring\capp\test\TestUserServiceRegister.class
