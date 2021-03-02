@@ -35,7 +35,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String handleLogin(@ModelAttribute("command") LoginCommand cmd, Model m, HttpSession session) {//what thenotation doeshere???????????????????????
+    public String handleLogin(@ModelAttribute("command") LoginCommand cmd, Model m, HttpSession session) {
         try {//Model accessible in the form
             User loggedInUser = userService.login(cmd.getLoginName(), cmd.getPassword());
             if (loggedInUser == null) {
@@ -47,7 +47,7 @@ public class UserController {
                 //Check the role and redirect to a appropriate dashboard
                 if (loggedInUser.getRole().equals(UserService.ROLE_ADMIN)) {
                     addUserInSession(loggedInUser, session);
-                    return "redirect:admin/dashboard";//?????????????????????????????????????koja return mokine
+                    return "redirect:admin/dashboard";
                 } else if (loggedInUser.getRole().equals(UserService.ROLE_USER)) {
                     addUserInSession(loggedInUser, session);
                     return "redirect:user/dashboard";
@@ -59,31 +59,31 @@ public class UserController {
             }
         } catch (UserBlockedException ex) {
             m.addAttribute("err", ex.getMessage());
-            return "index";//JSP  -/WEB-INF/view/indes.jsp
+            return "index";//JSP  -/WEB-INF/view/index.jsp
         }
     }
     
      @RequestMapping(value = {"/logout"})
     public String logout(HttpSession session) {
         session.invalidate();//you have to terminate user session
-        return "redirect:index?act=lo";//JSP  -/WEB-INF/view/indes.jsp
+        return "redirect:index?act=lo";//JSP  -/WEB-INF/view/index.jsp
     }
 
     @RequestMapping(value = {"user/dashboard"})
     public String userDashbord() {
-        return "dashboard_user";//JSP  -/WEB-INF/view/indes.jsp
+        return "dashboard_user";//JSP  -/WEB-INF/view/index.jsp
     }
 
     @RequestMapping(value = {"admin/dashboard"})
     public String adminDashbord() {
-        return "dashboard_admin";//JSP  -/WEB-INF/view/indes.jsp
+        return "dashboard_admin";//JSP  -/WEB-INF/view/index.jsp
     }
     
      @RequestMapping(value = {"admin/users"})
     public String getUserList(Model m) {
         m.addAttribute("userList",userService.getUserList());
         
-        return "users";//JSP  -/WEB-INF/view/indes.jsp
+        return "users";//JSP  -/WEB-INF/view/index.jsp
     }
     
     

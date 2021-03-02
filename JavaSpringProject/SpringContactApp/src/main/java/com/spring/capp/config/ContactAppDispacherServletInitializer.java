@@ -8,8 +8,9 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class ContactAppDispacherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 //Dispatcher is responsible for all the requests and send the requests to controller
+ //  This servlet should be initialized first to configure the whole spring framework 
     @Override
-    protected Class<?>[] getRootConfigClasses() {
+    protected Class<?>[] getRootConfigClasses() { //will be your spring root config
       return  new Class[]{SpringRootConfig.class};
     }
 
@@ -19,14 +20,15 @@ public class ContactAppDispacherServletInitializer extends AbstractAnnotationCon
     }
 
     @Override
-    protected String[] getServletMappings() {
+    protected String[] getServletMappings() { //pattern the controller,Mapping the front controller
       return new String[]{"/"};
     }
 
-    @Override
+    @Override 
     public void onStartup(ServletContext servletContext) throws ServletException {
-        super.onStartup(servletContext); //To change body of generated methods, choose Tools | Templates. MUST PRESENT
-        //Configure global task here if required
+        super.onStartup(servletContext);
+        //MUST PRESENT
+       
     }
     
 }

@@ -9,21 +9,16 @@ import sun.jvm.hotspot.debugger.posix.DSO;
 
 @Configuration
 @ComponentScan(basePackages = {"com.spring.capp.dao","com.spring.capp.service"})
-public class SpringRootConfig {
+public class SpringRootConfig {//contains beans related to business or application layer
     //TODO: Services , DAO,DataSource, Email Sender or some other business layer beans
   @Bean
   public BasicDataSource getDataSource(){
   BasicDataSource ds=new BasicDataSource();
   ds.setDriverClassName("com.mysql.jdbc.Driver");
-  ds.setUrl("jdbc:mysql://localhost:3306/capp_db?useSSL=false");
+  ds.setUrl("jdbc:mysql://localhost:3306/capp_db");
   ds.setUsername("root");
   ds.setPassword("rootroot");
  
-  ds.setMaxTotal(2);
-  ds.setInitialSize(1);
-  ds.setTestOnBorrow(true);
-  ds.setValidationQuery("SELECT 1");
-  ds.setDefaultAutoCommit(true);
    return ds;
 }
 }

@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -16,7 +17,7 @@ public class ContactDAOImpl extends BaseDAO implements ContactDAO {
 
     @Override
     public void save(Contact c) {
-        String sql = "INSERT INTO contact(userId, name, phone, email, address, remark)VALUES (:userId, :name, :phone, :email, :address, :remark)";
+        String sql = "INSERT INTO contact(userId, name, phone, email, address, remark)VALUES (:userId, :name, :         phone, :email, :address, :remark)";
         Map m = new HashMap();
         m.put("userId", c.getUserId());
         m.put("name", c.getName());

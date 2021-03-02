@@ -21,7 +21,7 @@ public class TestController {
     }
 
     @RequestMapping("/test/get_time")
-    @ResponseBody //generally d.tostrimg is a jsp file but with this line we want to write the date directly in out put string
+    @ResponseBody //generally d.tostring is a jsp file but with this line we want to write the date directly in out put string
     public String getServerTime() {
         System.out.println("----------getServerTime()-----------");
         Date d = new Date();

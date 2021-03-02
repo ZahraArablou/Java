@@ -22,7 +22,7 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl extends BaseDAO implements UserService{
     
     @Autowired
-    private UserDAO userDAO; ////?????????کی مقدار گزاری میشه
+    private UserDAO userDAO; 
     
     @Override
     public void register(User u) {
@@ -40,7 +40,7 @@ public class UserServiceImpl extends BaseDAO implements UserService{
        try{
        User u=getNamedParameterJdbcTemplate().queryForObject(sql,m,new UserRowMapper());
        if(u.getLoginStatus().equals(UserService.LOGIN_STATUS_BLOCKED)){//blocked condition
-           throw new UserBlockedException("Your account has been blocked.Contact to admin");
+           throw new UserBlockedException("Your account has been blocked. Contact to admin");
        }else 
        {
            return u;

@@ -18,7 +18,7 @@ public class ContactController {
     private ContactService contactService;
 
     @RequestMapping(value = "/user/contact_form")
-    public String contactForm(Model m) {
+    public String contactForm(Model m) { // you need to bind your command then it is accessible in jsp page.
         Contact contact = new Contact();
         m.addAttribute("command", contact);
         return "contact_form"; //JSP form view

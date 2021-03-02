@@ -21,7 +21,7 @@ public class TestUserDAOFindSingleRecord {
         // JUnit can use here to test
         ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringRootConfig.class);
         UserDAO userDAO = ctx.getBean(UserDAO.class);
-        //TODO:the uset details will be taken from User-Reg-Form
+        //TODO:the user details will be taken from User-Reg-Form
         User u = userDAO.findById(1);
         System.out.println("--------------user Detail-----------------------");
         System.out.println(u.getUserId());

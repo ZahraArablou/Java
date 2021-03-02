@@ -12,10 +12,10 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcDaoSupport;
 
 //do not @Repository or @Service or @Component annotation
 
-abstract public class BaseDAO extends NamedParameterJdbcDaoSupport {
+abstract public class BaseDAO extends NamedParameterJdbcDaoSupport {//this is a class in spring JPA provides prepration of JDBC template object
     @Autowired
     public void setDataSource2(DataSource ds){
-        super.setDataSource(ds);
+        super.setDataSource(ds); //this object given to the parrent class
     }
     
 }

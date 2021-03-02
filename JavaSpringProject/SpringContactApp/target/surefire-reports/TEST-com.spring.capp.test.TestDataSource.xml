@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.9+7-LTS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\RepositoryForSpring\SpringProject\SpringContactApp"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\heshmat\Documents\GitHub\Java\JavaSpringProject\SpringContactApp"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,9 +15,10 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\RepositoryForSpring\SpringProject\SpringContactApp"/>
+    <property name="user.dir" value="C:\Users\heshmat\Documents\GitHub\Java\JavaSpringProject\SpringContactApp"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.9+7-LTS"/>
+    <property name="netbeans.deploy" value="true"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\heshmat\AppData\Local\Temp\"/>
@@ -29,7 +30,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-12.1\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\NetBeans-12.1\netbeans\java\maven\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\dart-sass;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\heshmat\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\heshmat\AppData\Local\Programs\Python\Python38\;C:\Users\heshmat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\heshmat\AppData\Local\GitHubDesktop\bin;C:\Users\heshmat\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\heshmat\.dotnet\tools;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.9\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\dart-sass;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\heshmat\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\heshmat\AppData\Local\Programs\Python\Python38\;C:\Users\heshmat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\heshmat\AppData\Local\GitHubDesktop\bin;C:\Users\heshmat\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Users\heshmat\.dotnet\tools;C:\Users\heshmat\AppData\Roaming\Composer\vendor\bin;."/>
     <property name="maven.conf" value="C:\Program Files\NetBeans-12.1\netbeans\java\maven\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -46,7 +47,7 @@
     <property name="java.class.path" value="C:\Program Files\NetBeans-12.1\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.1\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dnetbeans.deploy=true -Dmaven.ext.class.path=C:\Program Files\NetBeans-12.1\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 package"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.9"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>

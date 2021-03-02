@@ -9,6 +9,11 @@ package com.spring.capp.domain;
 public class Contact {
     private  Integer contactId;//PK
     private Integer userId;//FK
+    private String name;
+    private String phone;
+    private String email;
+    private String address;
+    private String remark;
 
     public Contact() {
     }
@@ -68,9 +73,5 @@ public class Contact {
     public void setRemark(String remark) {
         this.remark = remark;
     }
-    private String name;
-    private String phone;
-    private String email;
-    private String address;
-    private String remark;
+   
 }
